@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.aungpyaesone.navgraph.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.aungpyaesone.navgraph.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" >
+        <argument android:name="flowStepNumber"
+            app:argType="integer"
+            />
+        <action
+            android:id="@+id/action_userFragment_to_actionFragment"
+            app:destination="@id/actionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/actionFragment"
+        android:name="com.aungpyaesone.navgraph.ActionFragment"
+        android:label="fragment_action"
+        tools:layout="@layout/fragment_action" >
+        <action
+            android:id="@+id/action_actionFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deepLinkFragment"
+        android:name="com.aungpyaesone.navgraph.DeepLinkFragment"
+        android:label="fragment_deep_link"
+        tools:layout="@layout/fragment_deep_link" />
+    <fragment
+        android:id="@+id/setting_dest"
+        android:name="com.aungpyaesone.navgraph.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>

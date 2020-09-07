@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NavigationComponent</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="go_to_user_fragment">go to user fragment</string>
+    <string name="go_to_action_fragment">Go to action fragment</string>
+    <string name="settings">settings</string>
+    <string name="home">home</string>
+    <string name="deeplink">deeplink</string>
+    <string name="deep_link">I am deep link fragment</string>
+    <string name="setting_fragment">Setting fragment</string>
+    <string name="enter_your_deep_lin_args">enter your deep lin args</string>
+    <string name="send_notification">Send Notification</string>
+</resources>
